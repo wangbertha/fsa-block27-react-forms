@@ -30,7 +30,7 @@ export default function Authenticate({ token }) {
         {successMessage && <p>{successMessage}</p>}
         {username && <p>Username: {username}</p>}
         {error && <p>{error}</p>}
-        <button onClick={getAuthentication}>Authenticate Token</button>
+        <button className='auth-btn' onClick={getAuthentication}>Authenticate Token</button>
     </>
   )
 }
